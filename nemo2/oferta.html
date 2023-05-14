@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Przystań Nemo</title>
+    <link rel="stylesheet" type="text/css" href="nemo.css">
+</head>
+  <body>
+   <header>
+      <h1>Przystań Nemo</h1>
+
+          <nav id='menu'>
+          
+  <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+  <ul>
+     <li><a href="nemo.html">Główna</a></li>
+     <li><a class="active" href="oferta.html">Oferta</a></li>
+     <li><a class='dropdown-arrow' >Pokoje</a>
+            <ul class='sub-menus'>
+            <li><a href="pokoje2os.html">Pokoje 2-osobowe</a></li>
+            <li><a href="apa.html">Apartamenty</a></li>
+            <li><a href="domek.html">Domek 4-osobowy</a></li>
+            </ul>
+    </li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    </nav>   
+    </header>
+    
+    <main>
+    <section id="oferta">
+    <h2> </h2>
+ <h2>Oferta</h2>
+
+
+            <div class="galeria2">
+	          <img src="glowna.jpg" width="600" height="600">
+             </div>
+             <div class="tekst">
+             
+                       <p>Zapraszamy Państwa do Przystani Nemo położonej w spokojnej dzielnicy Ustki, w odległości ok. 10 min. spacerkiem do centrum miasta i 20 min. do plaży.</p>
+                       </div>
+        <div class="tabela">
+            <table border CELLSPACING=5 CELLPADDING=10 width = 1000 >
+
+<tr><th style="background-color: #a7a7a7;">Pokój</th><th style="background-color: #a7a7a7;">lipiec-sierpień</th><th style="background-color: #a7a7a7;">poza sezonem</th></tr>
+
+<tr><td>Pokój 2-osobowy</td><td>140-150zł</td><td>110-120zł</td></tr>
+<tr><td>Apartament nr 7 z tarasem</td><td>340zł*</td><td>240zł*</td></tr>
+<tr><td>Apartament nr 8</td><td>280zł*</td><td>200zł*</td></tr>
+<tr><td>Apartament nr 9</td><td>300zł*</td><td>220zł*</td></tr>
+<tr><td>Domek</td><td>200zł (za 3 osoby)</td><td>------------</td></tr>
+
+</table>
+<p>* - cena dla 4 osób</p>
+</div>
+   <div class="tekst">
+   
+
+                       <p>Oferujemy Państwu nocleg w komfortowych apartamentach, pokojach 2-osobowych z łazienkami oraz w domku.</p>
+
+                       <p>Do dyspozycji gości jest ogród z altaną i miejscami do grilla oraz huśtawką dla dzieci. W świetlicy można  pograć w piłkarzyki i ping-ponga. Dla gości pokojów 2-osobowych kuchnia jest ogólnodostępna.</p>
+                       
+                       
+                       <p>Dla gości bezpłatnie udostępniamy rowery górskie oraz miejskie.</p>
+                       <p>  Parking dla samochodów znajduje się przed domem. </p>
+                       <p>Do ceny doliczana jest opłata klimatyczna. Doba hotelowa rozpoczyna się o godz. 14.00 w dniu przyjazdu, a kończy o godz. 10.00 w dniu wyjazdu.</p>
+<p><strong>Zadatek za pobyt prosimy przesyłać na konto </strong> 79 1090 2590 0000 0001 4745 1573</p>
+<p>Taluniewicz Ludwik </p><p>76-270 Ustka ul. Łąkowa 10</p>
+                    </div>
+
+
+
+
+                    <h2>Atrakcje w przystani nemo: </h2>
+                    
+                   
+                    
+                    
+                     <div class="galeria">
+	          <div id="div1"><img id="myImg1" class="myImg" src="ogrodek.jpg" alt="Ogród z altaną i miejscami do grilla oraz huśtawką dla dzieci." width="300" height="200" /><br>Grill</div>
+       <div id="div1"> <img id="myImg2" class="myImg" src="rowery.jpeg" alt="Dla gości bezpłatnie udostępniamy rowery górskie oraz miejskie." width="300" height="200"/><br>Rowery</div>
+       <div id="div1"> <img id="myImg3" class="myImg" src="ping.jpg" alt="Swietlica, w której można pograć w piłkarzyki i ping-ponga." width="300" height="200"/><br>Świetlica</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+</div>
+
+              <script>
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// Get all images
+var imgs = document.getElementsByClassName("myImg");
+
+// Loop through all images and add event listeners
+for (var i = 0; i < imgs.length; i++) {
+  var img = imgs[i];
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+        <footer>
+      <p>&copy; 2023 Przystań Nemo. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+   </section> 
+    </main>
+  </body>
+</html>
